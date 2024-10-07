@@ -30,4 +30,10 @@
     <ProjectReference Include="..\Ap2ProjectApi.Data\Ap2ProjectApi.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Data\Ticket.Db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
