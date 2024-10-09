@@ -22,17 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Ap2ProjectApi.Data\Ap2ProjectApi.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Data\Ticket.Db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>
