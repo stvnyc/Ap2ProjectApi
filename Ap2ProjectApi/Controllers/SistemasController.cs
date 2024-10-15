@@ -36,7 +36,7 @@ public class SistemasController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> PutSistemas(int id, Sistemas sistemas)
     {
-        if (id != sistemas.SistemasId)
+        if (id != sistemas.SistemaId)
         {
             return BadRequest();
         }
@@ -63,7 +63,7 @@ public class SistemasController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Sistemas>> PostSistemas(Sistemas sistemas)
     {
-        if (sistemas.SistemasId <= 0 || !SistemasExists(sistemas.SistemasId))
+        if (sistemas.SistemaId <= 0 || !SistemasExists(sistemas.SistemaId))
         {
             _context.Sistemas.Add(sistemas);
         }
@@ -93,6 +93,6 @@ public class SistemasController : ControllerBase
     }
     private bool SistemasExists(int id)
     {
-        return _context.Sistemas.Any(e => e.SistemasId == id);
+        return _context.Sistemas.Any(e => e.SistemaId == id);
     }
 }

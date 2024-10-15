@@ -74,7 +74,7 @@ namespace Ap2ProjectApi.Migrations
 
             modelBuilder.Entity("Ap2ProjectApi.Data.models.Sistemas", b =>
                 {
-                    b.Property<int>("SistemasId")
+                    b.Property<int>("SistemaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -82,7 +82,7 @@ namespace Ap2ProjectApi.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("SistemasId");
+                    b.HasKey("SistemaId");
 
                     b.ToTable("Sistemas");
                 });

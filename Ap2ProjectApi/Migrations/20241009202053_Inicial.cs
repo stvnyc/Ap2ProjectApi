@@ -47,13 +47,13 @@ namespace Ap2ProjectApi.Migrations
                 name: "Sistemas",
                 columns: table => new
                 {
-                    SistemasId = table.Column<int>(type: "INTEGER", nullable: false)
+                    SistemaId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     SistemaNombre = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Sistemas", x => x.SistemasId);
+                    table.PrimaryKey("PK_Sistemas", x => x.SistemaId);
                 });
 
             migrationBuilder.CreateTable(

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ap2ProjectApi.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20241009061939_Inicial")]
+    [Migration("20241009202053_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -77,7 +77,7 @@ namespace Ap2ProjectApi.Migrations
 
             modelBuilder.Entity("Ap2ProjectApi.Data.models.Sistemas", b =>
                 {
-                    b.Property<int>("SistemasId")
+                    b.Property<int>("SistemaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -85,7 +85,7 @@ namespace Ap2ProjectApi.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("SistemasId");
+                    b.HasKey("SistemaId");
 
                     b.ToTable("Sistemas");
                 });
